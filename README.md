@@ -1,16 +1,24 @@
-# React + Vite
+# Marketplace Resilience Monitor 🛡️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Um dashboard de monitoramento de produtos focado em UX Defensiva, Tratamento de Erros e Engenharia de Caos.
 
-Currently, two official plugins are available:
+## 🎯 O Objetivo
+Este projeto foi desenvolvido para demonstrar competências de **Frontend Resilience**. Diferente de e-commerces tradicionais que focam apenas no "Caminho Feliz", esta aplicação prioriza o comportamento do sistema em cenários de falha (API Down, Latência, Erros 500).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Stack & Decisões Técnicas
+- **React (Vite):** Para performance e componentização.
+- **Tailwind CSS:** Para estilização utilitária e responsiva.
+- **Chaos Engineering (Simulado):** Implementação de um "Chaos Monkey" no frontend para testar a robustez da interface.
+- **DummyJSON API:** Utilizada como mock de dados para garantir estabilidade nos testes de integração.
 
-## React Compiler
+## 🚀 Funcionalidades Chave
+1.  **Chaos Mode Switch:** Um toggle que simula instabilidade de rede/API para validar o tratamento de erros.
+2.  **UX Defensiva:** Uso de *Skeleton Screens* para gerenciar a ansiedade do usuário durante o carregamento.
+3.  **Recuperação de Falha:** Fluxos de "Retry" claros que permitem ao usuário tentar novamente sem recarregar a página.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🔗 Links
+- **Deploy:** [Projeto](https://marketplace-resilience-monitor.vercel.app/)
+- **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/joaovcmontenegro/)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+*Projeto desenvolvido como estudo de caso sobre Confiabilidade de Frontend.*
